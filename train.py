@@ -26,7 +26,7 @@ imp = SimpleImputer(missing_values=np.nan, strategy='mean')
 imp.fit(X)
 X = imp.transform(X)
 
-
+#dff
 # Linear model
 clf = QuadraticDiscriminantAnalysis()
 yhat = cross_val_predict(clf, X, y, cv=5)
